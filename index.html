@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card_back">
+        <!-- <div class="card_overlay"></div> -->
+        <div class="search">
+          <input class="search_bar" type="text" placeholder="search" />
+          <button class="search_button">
+            <i class="ph-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="weather">
+          <div class="city">&nbsp;</div>
+          <div class="temp">
+            <img
+              class="hidden"
+              src="http://openweathermap.org/img/wn/04n@2x.png"
+              alt=""
+            />
+            <div class="temperature">&nbsp;</div>
+          </div>
+          <div class="description">
+            <div class="weather_description">&nbsp;</div>
+            <div class="humidity">&nbsp;</div>
+            <div class="wind_speed">&nbsp;</div>
+          </div>
+        </div>
+        <button class="button_more">Click for more</button>
+      </div>
+      <div class="card_front">
+        <div class="weekday">
+          <div class="day" data-id="0">Monday</div>
+          <p class="dayTemp">min/max</p>
+          <img
+            class="day__img"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+          />
+        </div>
+        <div class="weekday">
+          <div class="day" data-id="1">Thuesday</div>
+          <p class="dayTemp">min/max</p>
+          <img class="day__img" src="" />
+        </div>
+        <div class="weekday">
+          <div class="day" data-id="2">Wensday</div>
+          <p class="dayTemp">min/max</p>
+          <img class="day__img" src="" />
+        </div>
+        <div class="weekday">
+          <div class="day" data-id="3">Thuersday</div>
+          <p class="dayTemp">min/max</p>
+          <img class="day__img" src="" />
+        </div>
+        <div class="weekday">
+          <div class="day" data-id="4">Friday</div>
+          <p class="dayTemp">min/max</p>
+          <img class="day__img" src="" />
+        </div>
+        <div class="weekday">
+          <div class="day" data-id="5">Saturday</div>
+          <p class="dayTemp">min/max</p>
+          <img class="day__img" src="" />
+        </div>
+        <div class="weekday">
+          <div class="day" data-id="6">Sunday</div>
+          <p class="dayTemp">min/max</p>
+          <img class="day__img" src="" />
+        </div>
+        <div class="weekday">
+          <div class="day" data-id="7">Monday</div>
+          <p class="dayTemp">min/max</p>
+          <img class="day__img" src="" />
+        </div>
+        <button class="button_more">Return</button>
+      </div>
+    </div>
+    <div class="daily__forecast opacity">
+      <!-- <div class="days">
+        <div class="header">
+           <div class="sun">
+             <div class="sunrise">
+          <i class="ph-arrow-up"></i>
+       <i class="ph-sun-horizon"></i>
+       <p class="sunrise"></p>
+             </div>
+             <div class="sunset">
+          <i class="ph-arrow-down"></i>
+         <i class="ph-sun-horizon"></i>
+         <p class="sunset"></p>
+             </div>
+          </div>
+          <p class="moon">Moonrise / Moonset</p>
+        </div>
+        <div class="daily__feelsLike">
+         <table>
+    <tbody>
+      <tr><td></td>
+            <td>Morning</td>
+            <td>Afternoon</td>
+          <td>Evening</td>
+          <td>Night</td>
+        </tr>
+      <tr>
+            <td>Temperature</td>
+            <td>Morning</td>
+            <td>Afternoon</td>
+          <td>Evening</td>
+          <td>Night</td>
+        </tr>
+      <tr>         
+            <td>Feels like</td>
+         <td>Morning</td>
+            <td>Afternoon</td>
+          <td>Evening</td>
+          <td>Night</td>
+        </tr>
+    </tbody>
+</table>
+
+        </div>
+        <div class="daily__description">
+          <p class="daily_humidity">Humidtiy: 2%</p>
+          <p class="daily_clouds">Chance for clouds 2%</p>
+          <p class="daily_rain">Chance for rain 2%</p>
+          <p class="daily__pressure">Chance for rain 2%</p>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>
